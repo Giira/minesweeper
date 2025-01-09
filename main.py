@@ -1,14 +1,8 @@
 from tkinter import *
-from tkinter import ttk, messagebox
-
+from tkinter import ttk
+from grid import Grid
 
 DIFFICULTY = ""
-
-difficulty = {
-    "Easy": [(9, 9), 10],
-    "Medium": [(16, 16), 40],
-    "Hard": [(30, 16), 99],
-}
 
 root = Tk()
 root.title("Minesweeper")
@@ -51,4 +45,3 @@ root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
 root.mainloop()
-
